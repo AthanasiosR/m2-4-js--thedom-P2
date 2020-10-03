@@ -26,8 +26,22 @@
 // If you struggle with it, set it aside. In a few weeks, you might find the
 // solution comes more quickly :)
 
-const uniqueElements = (arr1, arr2) => {
+const uniqueElements = (arrA, arrB) => {
   // Your code here
+  let newArray = [];
+  arrA.filter((num) => {
+    if (arrB.includes(num)) {
+    } else {
+      newArray.push(num);
+    }
+  });
+  arrB.filter((item) => {
+    if (arrA.includes(item)) {
+    } else {
+      newArray.push(item);
+    }
+  });
+  return newArray;
 };
 
 // Part 2 - Test

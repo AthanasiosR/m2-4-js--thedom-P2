@@ -9,6 +9,10 @@
 
 const addNumbers = (...nums) => {
   // Insert missing solution please
+  let myArr = [...nums];
+  return myArr.reduce(function (total, num) {
+    return (total += num * num);
+  }, 0);
 };
 
 // Part 2 - Test

@@ -15,6 +15,12 @@
 
 const addValues = (arr, obj) => {
   // Insert missing solution please
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let ob = { ...arr[i], ...obj };
+    newArr.push(ob);
+  }
+  return newArr;
 };
 
 // Part 2 - Test

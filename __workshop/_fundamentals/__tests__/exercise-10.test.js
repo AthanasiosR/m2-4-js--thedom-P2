@@ -12,6 +12,29 @@ test("Exercise 10", () => {
     5,
   ]);
   // add more tests here...
+
+  expect(uniqueElements([0, 10, 20, 30], [10, 30, 40, 50])).toStrictEqual([
+    0,
+    20,
+    40,
+    50,
+  ]);
+  expect(uniqueElements([0, 31, 21, 33], [0, 10, 21, 31])).toStrictEqual([
+    33,
+    10,
+  ]);
+  expect(uniqueElements([5, 15, 25, 35], [15, 35, 45, 55])).toStrictEqual([
+    5,
+    25,
+    45,
+    55,
+  ]);
+  expect(uniqueElements([10, 11, 12, 13], [11, 13, 14, 15])).toStrictEqual([
+    10,
+    12,
+    14,
+    15,
+  ]);
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect
